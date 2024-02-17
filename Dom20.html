@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mdi {
+            margin-top: 5%;
+            border: 1px solid black;
+            width: 700px;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content:space-around; */
+            column-gap: 70px;
+        }
+
+        .imgg {
+            height: 100px;
+            width: 100px;
+        }
+
+        .divs {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        .displ {
+            border: 1px solid black;
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        var disp = document.createElement("div")
+        document.body.appendChild(disp)
+        disp.setAttribute("class", "displ");
+
+
+
+        var mdivs = document.createElement("div");
+        document.body.appendChild(mdivs)
+        mdivs.setAttribute("class", "mdi");
+
+        var div1 = document.createElement("div")
+        mdivs.appendChild(div1);
+        var img1 = document.createElement("img")
+        div1.appendChild(img1)
+        img1.setAttribute("src", "./222.jpg")
+        img1.setAttribute("class", "imgg")
+        div1.setAttribute("class", "divs")
+        img1.addEventListener("click", hello)
+        function hello() {
+            (function () {
+                disp.innerText = "";
+            })();
+            var a = document.createElement("img");
+            a.setAttribute("class", "displ")
+            a.setAttribute("src", "./222.jpg")
+            disp.appendChild(a);
+        }
+
+        var div2 = document.createElement("div")
+        mdivs.appendChild(div2);
+        var img2 = document.createElement("img")
+        div2.appendChild(img2)
+        img2.setAttribute("src", "./333.jpg")
+        img2.setAttribute("class", "imgg")
+        div2.setAttribute("class", "divs")
+        img2.addEventListener("click", hello1)
+        function hello1() {
+            (function () {
+                disp.innerText = "";
+            })();
+            var a = document.createElement("img");
+            a.setAttribute("class", "displ")
+            a.setAttribute("src", "./333.jpg")
+            disp.appendChild(a);
+        }
+
+        var div3 = document.createElement("div")
+        mdivs.appendChild(div3);
+        var img3 = document.createElement("img")
+        div3.appendChild(img3)
+        img3.setAttribute("src", "./444.jpg")
+        img3.setAttribute("class", "imgg")
+        div3.setAttribute("class", "divs")
+        img3.addEventListener("click", hello2)
+        function hello2() {
+            (function () {
+                disp.innerText = "";
+            })();
+            var a = document.createElement("img");
+            a.setAttribute("class", "displ")
+            a.setAttribute("src", "./444.jpg")
+            disp.appendChild(a);
+        }
+
+        var div4 = document.createElement("div")
+        mdivs.appendChild(div4);
+        var img4 = document.createElement("img")
+        div4.appendChild(img4)
+        img4.setAttribute("src", "./6347.jpg")
+        img4.setAttribute("class", "imgg")
+        div4.setAttribute("class", "divs")
+        img4.addEventListener("click", hello3)
+        function hello3() {
+            (function () {
+                disp.innerText = "";
+
+            })();
+            var a = document.createElement("img");
+            a.setAttribute("class", "displ")
+            a.setAttribute("src", "./6347.jpg")
+            disp.appendChild(a);
+        }
+
+
+    </script>
+</body>
+
+</html>

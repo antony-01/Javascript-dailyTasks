@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     table,tr,td{
+        border:1px solid black;
+        border-collapse: collapse;
+     }
+    </style>
+</head>
+<body>
+    <h1 id="content">
+        </h1>
+
+    <script>
+     
+       a=document.getElementById("content");
+       a.innerText=localStorage.getItem("data");
+     
+    </script>
+</body>
+</html>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+
+<!--
+ data=[{UN,PS}{UN,PS}{UN,PS}]
+
+ a=localStorage.getItem("data");
+
+ //console.log(a);
+ for(let i=0;i<a.length;i++){
+
+var tables=document.getElementsByTagName("table");
+
+//table=row
+ var tr1=document.createElement("tr");
+ tables[0].appendChild(tr1);
+
+ //table-data
+ var td1=document.createElement("td");
+ td1.innerText=a[i]["username"];
+ tr1.appendChild(td1)
+
+ var td2=document.createElement("td");
+ td2.innerText=a[i]["password"];
+ tr1.appendChild(td2);
+
+}  
+-->
+
+   

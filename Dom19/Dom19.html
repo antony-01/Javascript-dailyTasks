@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divf{
+            position:relative;
+            left:460px;
+            top:50px;
+            width:350px;
+            height:420px;
+            border:2px solid black;
+            border-radius: 5px;
+        }
+        .divf *{
+            margin-left: 21px;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var z=document.body;
+        z.style.backgroundImage="url('bgimg1.avif')";
+        z.style.backgroundRepeat="no-repeat";
+        z.style.backgroundPosition="center";
+        z.style.backgroundSize="cover";
+
+        var div1=document.createElement("div");
+        z.appendChild(div1);
+        div1.setAttribute("class","divf");
+
+        var h11= document.createElement("h1");
+        div1.appendChild(h11);
+        h11.innerText="Sign Up Form";
+        h11.style.marginBottom="35px";
+        //h11.style.color="white";
+
+        var ip=document.createElement("input");
+        div1.appendChild(ip);
+        ip.setAttribute("placeholder","Username")
+        ip.style.width="300px";
+        ip.style.height="30px";
+        ip.style.border="none";
+        ip.style.borderBottomStyle="solid";
+        ip.style.borderBottomWidth="1px";
+        ip.style.marginBottom="25px";
+        ip.style.backgroundColor="transparent";
+
+        var ip=document.createElement("input");
+        div1.appendChild(ip);
+        ip.setAttribute("placeholder","Password")
+        ip.style.width="300px";
+        ip.style.height="30px";
+        ip.style.border="none";
+        ip.style.borderBottomStyle="solid";
+        ip.style.borderBottomWidth="1px";
+        ip.style.marginBottom="25px";
+        ip.style.backgroundColor="transparent";
+
+
+        var ip=document.createElement("input");
+        div1.appendChild(ip);
+        ip.setAttribute("placeholder","Confirm password")
+        ip.style.width="300px";
+        ip.style.height="30px";
+        ip.style.border="none";
+        ip.style.borderBottomStyle="solid";
+        ip.style.borderBottomWidth="1px";
+        ip.style.marginBottom="25px";
+        ip.style.backgroundColor="transparent";
+
+        var ip1=document.createElement("input");
+        div1.appendChild(ip1);
+        ip1.setAttribute("type","date");
+        ip1.setAttribute("placeholder","D.O.B")
+        ip1.style.width="300px";
+        ip1.style.height="30px";
+        ip1.style.border="none";
+        ip1.style.borderBottomStyle="solid";
+        ip1.style.borderBottomWidth="1px";
+        ip1.style.marginBottom="25px";
+        ip1.style.backgroundColor="transparent";
+
+
+        var sb=document.createElement("input");
+        div1.appendChild(sb);
+        sb.setAttribute("type","submit");
+        sb.style.width="310px";
+        sb.style.height="30px";
+        sb.style.marginTop="15px";
+        sb.style.marginBottom="15px";
+        sb.style.color="white";
+        sb.style.fontWeight="500px";
+        sb.style.cursor="pointer";
+        sb.style.backgroundColor="black";
+        sb.style.border="none";
+
+
+        var b=document.createElement("button");
+        div1.appendChild(b);
+        b.style.backgroundColor="transparent";
+        b.innerText="close";
+        b.style.border="none";
+        b.addEventListener("click",()=>
+        {
+            window.close();
+        })
+      
+
+
+
+
+
+
+    </script>
+</body>
+</html>

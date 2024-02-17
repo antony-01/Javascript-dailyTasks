@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-top: 100px;
+            width:300px;
+            height: 390px;
+            border:2px solid black;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-image: url(./bgimg1.avif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+   
+
+        div input,label{
+            display: block;
+        }
+      
+
+        .llab{
+            margin-left:50px;
+        }
+        .ip{
+            margin-left: 50px;
+            height:25px;
+            width:200px;
+        }
+      
+        .submit{
+            display: inline-block;
+           margin-left: 50px;
+           margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1 style="text-align: center;">Register here</h1>
+        <form>
+        <label for="uname" class="llab">Username:</label>
+        <input type="text" placeholder="Enter name" id="uname" class="ip">
+        <label for="email" class="llab">Email:</label>
+        <input type="email" placeholder="Domain@gmail.com" id="email" class="ip">
+        <label for="dob" class="llab">D.O.B:</label>
+        <input type="date" id="dob" class="ip">
+        <label for="pass" class="llab">Password:</label>
+        <input type="text" placeholder="password" id="pass" class="ip">
+        <label for="cpass" class="llab">Confirm password:</label>
+        <input type="text" placeholder="password" id="cpass" class="ip">
+        <input type="submit" class="submit" value="submit">
+        <button>Login page</button>
+        </form>
+
+    </div>
+    
+    <script>
+       var  f= document.forms;
+
+       let arr = [];
+
+
+
+ f[0].addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  
+  var singledata = {
+    username: event.target[0].value,
+    email: event.target[1].value,
+    dob : event.target[2].value,
+    password : event.target[3].value,
+    confirm : event.target[4].value
+  };
+
+  arr.push(singledata);
+
+  
+  localStorage.setItem("data", JSON.stringify(arr));
+
+  
+  event.target[0].value = "";
+  event.target[1].value = "";
+  event.target[2].value = "";
+  event.target[3].value = "";
+  event.target[4].value = "";
+});
+
+
+//f[0][5].addEventListener("click", () => {
+//  window.open("Dom18-1.html");
+//});
+
+ f[0][6].addEventListener("click",()=>{
+
+    window.open("Dom22.html");
+ })
+       
+
+    </script>
+</body>
+</html>

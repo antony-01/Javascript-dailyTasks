@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divf{
+            position:relative;
+            left:460px;
+            top:50px;
+            width:350px;
+            height:420px;
+            border:0.5px solid white;
+        }
+        .divf *{
+            margin-left: 21px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+
+    document.body.style.backgroundImage="url('bgimg.jpg')";
+    document.body.style.backgroundRepeat="no-repeat";
+    document.body.style.backgroundPosition="center";
+    document.body.style.backgroundSize="cover";
+
+
+    
+    var div1 =document.createElement("div");
+    document.body.appendChild(div1);
+    div1.setAttribute("class","divf")
+
+    var h11= document.createElement("h1");
+    div1.appendChild(h11);
+    h11.innerText="Registration Form";
+    h11.style.color="white";
+    
+    var lb=document.createElement("label");
+    div1.appendChild(lb);
+    lb.innerHTML="Username";
+    lb.style.color="white";
+    lb.style.marginTop="10px";
+    lb.style.marginBottom="5px";
+    lb.style.display="block";
+
+    var ip=document.createElement("input");
+    div1.appendChild(ip);
+    ip.setAttribute("placeholder","name")
+    ip.style.width="300px";
+    ip.style.height="30px";
+
+    var lb1=document.createElement("label");
+    div1.appendChild(lb1);
+    lb1.innerHTML="Email";
+    lb1.style.color="white";
+    lb1.style.display="block";
+    lb1.style.marginBottom="5px";
+    var ip1=document.createElement("input");
+    div1.appendChild(ip1);
+    ip1.setAttribute("placeholder","info@gmail.com")
+    ip1.style.width="300px";
+    ip1.style.height="30px";
+
+
+    var lb2=document.createElement("label");
+    div1.appendChild(lb2);
+    lb2.innerHTML="password";
+    lb2.style.color="white";
+    lb2.style.display="block";
+    lb2.style.marginBottom="5px";
+    var ip2=document.createElement("input");
+    div1.appendChild(ip2);
+    ip2.setAttribute("placeholder","password")
+    ip2.style.width="300px";
+    ip2.style.height="30px";
+
+    var lb3=document.createElement("label");
+    div1.appendChild(lb3);
+    lb3.innerHTML="confirm password";
+    lb3.style.color="white";
+    lb3.style.display="block";
+    lb3.style.marginBottom="5px";
+    var ip2=document.createElement("input");
+    div1.appendChild(ip2);
+    ip2.setAttribute("placeholder","confirm password");
+    ip2.style.width="300px";
+    ip2.style.height="30px";
+
+
+
+    var sb=document.createElement("input");
+    div1.appendChild(sb);
+    sb.setAttribute("type","submit");
+    sb.style.width="310px";
+    sb.style.height="30px";
+    sb.style.marginTop="15px";
+    sb.style.borderRadius="5px";
+    sb.style.backgroundColor="violet";
+    sb.style.border="none";
+
+
+    var pp=document.createElement("p");
+    div1.appendChild(pp);
+    pp.innerText="Sign Up?";
+    pp.style.color="grey";
+    
+    pp.addEventListener("click",openn)
+
+    function openn(){
+        window.open("Dom14.html")
+    }
+   
+    </script>
+</body>
+
+</html>

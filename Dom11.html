@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer-div{
+            width:300px;
+            background-color: brown;
+        }
+        .inner-div{
+            background-color: rgb(239, 232, 232);
+            animation-name: a;
+        }
+    @keyframes a{
+    0%{background-color: blue; top:0px}
+    25%{background-color: black;color:white;top:60px; transform: rotate(120deg);}
+    50%{background-color: rgb(212, 0, 255); top:120px; left:0px;}
+    75%{background-color: red; top:240px;}
+    100%{background-color: green;top:0px;}
+}
+    </style>
+</head>
+<body>
+    
+    <div class="outer-div">
+        <div class="inner-div">
+            Loading....
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!---Events counting Numbers -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+        var a=document.createElement("button");
+        document.body.appendChild(a);
+        a.innerText="Click me";
+        a.addEventListener("click",hi);
+
+        //var b=document.createElement("h1");
+       // document.body.appendChild(b);
+
+
+
+    var count=0;
+      function hi(){
+        count++;
+       b=document.createElement("h1");
+       b.innerText=count;
+       document.body.appendChild(b);
+      }
+
+  
+    </script>
+</body>
+</html>

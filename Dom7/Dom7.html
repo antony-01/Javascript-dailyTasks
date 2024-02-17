@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-resume</title>
+    <style>
+        body{
+            height:2000px;
+        }
+      .imgy {
+        height: 100px;
+        width: 100px;
+        float: right;
+        margin-top: -105px;
+        margin-right: 90px;
+        border-radius: 55%;
+      }
+      .colory{
+        color:navy;
+      }
+      .bordery{
+    
+        border:1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+          var z= document.body;
+         var a= document.createElement("h1");
+         z.appendChild(a);
+         a.innerText="Antony Nakka";
+         a.style.marginBottom="0px";
+         a.style.textAlign="center";
+         a.setAttribute("class","colory");
+
+         var b= document.createElement("p");
+         z.appendChild(b);
+         b.innerText="Aspiring Software Developer";
+         b.style.textAlign="center";
+         b.style.fontStyle="italic";
+
+         var imgg= document.createElement("img")
+         document.body.appendChild(imgg);
+         imgg.setAttribute("src","user.jpg");
+         imgg.setAttribute("class","imgy");
+
+         var hh=document.createElement("hr");
+         z.appendChild(hh);
+         hh.style.height="3px";
+        // hh.style.backgroundColor="g";
+
+         var obj=document.createElement("fieldset");
+         z.appendChild(obj);
+         var ff=document.createElement("legend");
+         ff.innerHTML="<h3>Objective</h3>"
+         ff.setAttribute("class","colory");
+         obj.appendChild(ff);
+
+         var p1= document.createElement("p");
+         obj.appendChild(p1);
+         p1.innerText="An enthusiastic and curious learner who constantly strives for self-improvement.I am currently looking for an opportunity to utilize my skills in challenging environment and become  valuable asset to organization I work";
+
+         var obj1=document.createElement("fieldset");
+         z.appendChild(obj1);
+         obj1.style.marginTop="5px";
+         var obj2=document.createElement("legend");
+         obj2.setAttribute("class","colory");
+         obj2.innerHTML="<h3>Academic Qualification</h3>";
+         obj1.appendChild(obj2);
+
+         var tables= document.createElement("table");
+         tables.setAttribute("class","bordery");
+         obj1.appendChild(tables);
+
+         var tr1=document.createElement("tr");
+         tr1.setAttribute("class","bordery");
+         tables.appendChild(tr1);
+         var td1=document.createElement("td");
+         td1.setAttribute("class","bordery");
+         tr1.appendChild(td1);
+         td1.innerHTML="<b>Schooling</b>";
+         var td2=document.createElement("td");
+         td2.setAttribute("class","bordery");
+         tr1.appendChild(td2);
+         td2.innerHTML="<b>Intermediate</b>";
+         var td3=document.createElement("td");
+         td3.setAttribute("class","bordery");
+         tr1.appendChild(td3);
+         td3.innerHTML="<b>Btech-CSE</b>";
+
+         var tr2=document.createElement("tr");
+        
+         tr2.setAttribute("class","bordery");
+         tables.appendChild(tr2);
+         var td4=document.createElement("td");
+         td4.setAttribute("class","bordery");
+         tr2.appendChild(td4);
+         td4.innerText="J.Sikile School";
+         var td5=document.createElement("td");
+         td5.setAttribute("class","bordery");
+         tr2.appendChild(td5);
+         td5.innerText="Narayana Junior College";
+         var td6=document.createElement("td");
+         td6.setAttribute("class","bordery");
+         tr2.appendChild(td6);
+         td6.innerText="Lovely Professional University";
+
+         var tr3=document.createElement("tr");
+         tr3.setAttribute("class","bordery");
+         tables.appendChild(tr3);
+
+         var td7=document.createElement("td");
+         td7.setAttribute("class","bordery");
+         tr3.appendChild(td7);
+         td7.innerText="2017";
+
+         var td8=document.createElement("td");
+         td8.setAttribute("class","bordery");
+         tr3.appendChild(td8);
+         td8.innerText="2017-2019"
+         var td9=document.createElement("td");
+         td9.setAttribute("class","bordery");
+         tr3.appendChild(td9);
+         td9.innerText="2019-2023";
+
+         var obj3=document.createElement("fieldset");
+         z.appendChild(obj3);
+
+         var obj31=document.createElement("legend");
+         obj31.setAttribute("class","colory");
+         obj31.innerHTML="<h3>Skills</h3>"
+         obj3.appendChild(obj31);
+
+         var obj32=document.createElement("ul");
+         obj3.appendChild(obj32);
+
+         var li1=document.createElement("li");
+         obj32.appendChild(li1);
+         li1.innerText="Python"
+         var li2=document.createElement("li");
+         obj32.appendChild(li2);
+         li2.innerText="ReactJs"
+         var li3=document.createElement("li");
+         obj32.appendChild(li3);
+         li3.innerText="JavaScript"
+         var li4=document.createElement("li");
+         obj32.appendChild(li4);
+         li4.innerText="Html-Css"
+        
+
+         var obj4=document.createElement("fieldset");
+         z.appendChild(obj4);
+
+         var obj41=document.createElement("legend");
+         obj41.setAttribute("class","colory");
+         obj41.innerHTML="<h3>Hobbies</h3>"
+         obj4.appendChild(obj41);
+
+
+         var obj42=document.createElement("ul");
+         obj4.appendChild(obj42);
+
+         var li5=document.createElement("li");
+         obj42.appendChild(li5);
+         li5.innerText="Sports"
+         var li6=document.createElement("li");
+         obj42.appendChild(li6);
+         li6.innerText="Music"
+         var li7=document.createElement("li");
+         obj42.appendChild(li7);
+         li7.innerText="travelling"
+         var li8=document.createElement("li");
+         obj42.appendChild(li8);
+         li8.innerText="movies";
+
+         var obj5=document.createElement("fieldset");
+         z.appendChild(obj5);
+
+         var obj51=document.createElement("legend");
+         obj51.setAttribute("class","colory");
+         obj51.innerHTML="<h3>Declaration</h3>"
+         obj5.appendChild(obj51);
+        
+         var p5=document.createElement("p");
+         p5.innerText="I, hereby declare provided information is true and best of my knowledge"
+         obj5.appendChild(p5);
+
+         
+         var divv=document.createElement("div");
+         z.appendChild(divv);
+         
+         var h44=document.createElement("h4");
+         h44.setAttribute("class","colory");
+         divv.appendChild(h44);
+         h44.innerHTML="<h3>Signature</h3>"
+         
+
+         var imaggg=document.createElement("img");
+         divv.appendChild(imaggg);
+         imaggg.setAttribute("src","sign.jpg");
+         imaggg.style.width="200px";
+         imaggg.style.marginTop="-10px";
+
+
+
+
+
+
+         
+    </script>
+  </body>
+</html>

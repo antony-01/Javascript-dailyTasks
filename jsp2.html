@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    debugger;
+
+      a = [3, 2, 4, 5, 2, 4, 1];
+      b = [];
+
+      for (i = 0; i < a.length; i++) {
+        c = 0;
+        for (j = 0; j < b.length; j++) {
+          if (a[i] == b[i]) {
+            c = c + 1;
+          }
+        }
+        if (c == 0) {
+          b.push(a[i]);
+        }
+      }
+      console.log(b);
+    </script>
+  </body>
+</html>
